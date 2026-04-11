@@ -53,8 +53,6 @@ def test_rent_multiple_regular_books():
     
     assert c.statement() == expected_report
 
-from model import Book, Rental, Client
-
 def test_rent_children_book_short_duration():
     book = Book("Peter Pan", Book.CHILDREN)
     r = Rental(book, 2)
